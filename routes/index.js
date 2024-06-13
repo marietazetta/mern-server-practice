@@ -1,12 +1,12 @@
 module.exports = app => {
 
 
-    const authRoutes = require("./routes/auth.routes");
+    const authRoutes = require("./auth.routes")
     app.use("/auth", authRoutes);
 
-    //Add your routes here 
+    //Add your new routes here 
 
-    // const projectsRoutes = require("./routes/items.routes");
-    // app.use("/items", authRoutes);
+    const projectsRoutes = require("./projects.routes")
+    app.use("/projects", projectsRoutes);
 
 }
